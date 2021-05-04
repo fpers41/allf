@@ -1,0 +1,242 @@
+.map {
+    margin-top: 5rem;
+    position: relative;
+
+    overflow: hidden;
+
+    .contact {
+        overflow: hidden;
+        position: absolute;
+        display: block;
+        top: 20px;
+        height: 95%;
+        left: 20px;
+        width: 30%;
+        padding: 2rem ​20px 20rem;
+        background: linear-gradient(135deg, #1976bc 0%, #8dc645 100%);
+
+        h1 {
+            margin: 10px 1.25rem 10px;
+            font-weight: 200;
+            font-size: 30px;
+            color: #fff;
+
+            span {
+                font-size: 30px;
+                font-weight: bold;
+                color: #fff;
+            }
+        }
+
+        p {
+            margin: 10px 1.25rem 10px;
+            font-size: 15px;
+            color: #fff;
+            font-weight: 200;
+        }
+
+        hr {
+            width: 95%;
+            margin: 15px auto;
+            height: 1px;
+            opacity: 0.8;
+            color: #fff;
+        }
+
+        .icons {
+            position: relative;
+
+            &:hover {
+                #map {
+                    color: #8dc645;
+                }
+
+                #phone,
+                #book {
+                    color: #8dc645;
+                }
+            }
+
+            #map {
+                transition: 0.4s;
+                position: absolute;
+                font-size: 3.5rem;
+                color: #fff;
+                top: 10px;
+                left: 20px;
+            }
+
+            .maptext {
+                position: absolute;
+                top: 1rem;
+                left: 20%;
+
+                h1 {
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+
+            #phone {
+                transition: 0.4s;
+
+                position: absolute;
+                font-size: 3.5rem;
+                color: #fff;
+                top: 8.5rem;
+                left: 20px;
+            }
+
+            .phonetext {
+                position: absolute;
+                top: 7.5rem;
+                left: 20%;
+
+                h1 {
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+
+            #book {
+                transition: 0.4s;
+
+                position: absolute;
+                font-size: 3.5rem;
+                color: #fff;
+                top: 16.4rem;
+                left: 20px;
+            }
+
+            .booktext {
+                position: absolute;
+                top: 14rem;
+                left: 20%;
+
+                h1 {
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+.map-text {
+    text-align: center;
+
+    h1 {
+        margin-top: 2rem;
+        margin: 1rem 0;
+        color: #181818;
+        font-size: 49px;
+
+        span {
+            font-weight: bold;
+            position: relative;
+            z-index: 1;
+
+            &::after {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                height: 15px;
+                width: 103%;
+                left: -3px;
+                bottom: 2px;
+                background: linear-gradient(to right, #1976bc 0%, #8dc645 100%);
+            }
+        }
+    }
+}
+
+.phonecontact {
+    display: none;
+    padding: 5rem 0;
+    width: 100%;
+    background: linear-gradient(to bottom, #1976bc 0%, #9bc645 100%);
+    h1 {
+        margin: 10px 1.25rem 10px;
+        font-weight: 200;
+        font-size: 30px;
+        color: #fff;
+
+        span {
+            font-size: 30px;
+            font-weight: bold;
+            color: #fff;
+        }
+    }
+
+    p {
+        margin: 10px 1.25rem 10px;
+        font-size: 15px;
+        color: #fff;
+        font-weight: 200;
+    }
+
+    hr {
+        width: 95%;
+        margin: 15px auto;
+        height: 1px;
+        opacity: 0.8;
+        color: #fff;
+    }
+
+    .icons {
+        &:hover {
+            i {
+                color: #8dc645;
+            }
+        }
+
+        i {
+            margin-left: 1rem ;
+            transition: 0.4s;
+
+            font-size: 3.5rem;
+            color: #fff;
+        }
+
+        .content {
+            h1 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .phonecontact{
+        display: block;
+    }
+    .map{
+        .contact{
+            display: none;
+        }
+    }
+    #footer {
+        overflow: hidden;
+        .last {
+            text-align: center;
+            input {
+                margin: 5px auto;
+            }
+            button {
+                margin-left: 6.5rem;
+            }
+        }
+    }
+}

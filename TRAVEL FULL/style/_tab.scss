@@ -1,0 +1,69 @@
+.tabmenu {
+  overflow: hidden;
+  text-align: center;
+  .btn {
+    margin: 1.5rem 12px;
+    position: relative;
+    transition: 0.4s;
+    border: 1px solid #fff5;
+    padding: 10px 22px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      transition: 0.4s;
+      width: 0%;
+      height: 2px;
+      left: 0;
+      bottom: 0;
+      background: linear-gradient(to right, #1976bc 0%, #9bc645 100%);
+    }
+    &:hover {
+      border: 1px solid #ddd;
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+  .btn:nth-child(1) {
+    position: relative;
+    padding: 10px 22px;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 2px;
+      left: 0;
+      bottom: 0;
+      background: linear-gradient(to right, #1976bc 0%, #9bc645 100%);
+    }
+  }
+}
+.main {
+  .box {
+    transition: 1s;
+    text-align: center;
+    img {
+      width: 100%;
+    }
+    h2 {
+      top: 20%;
+      color: red;
+      transform: translateY(-11rem);
+    }
+    .box2 {
+      transition: 1s;
+      bottom: 0;
+      transform: translateY(-3rem);
+      display: block;
+    }
+    &:hover {
+      .box2 {
+        display: block;
+        transform: translateY(-10rem);
+      }
+    }
+  }
+}
